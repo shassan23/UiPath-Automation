@@ -1,0 +1,215 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="628.0000000000001,1660" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="“1. Locate and select a folder containing multiple files. &#xA;&#xA; 2. List the directory path of all the files in the Output panel. &#xA;&#xA; 3. Store the updated names in MS Word file and save and close it.” " DisplayName="Sequence - This code is to write all the file names in MS Word prestn in a particular folder" sap:VirtualizedContainerService.HintSize="577.6,1636.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="FolderName" />
+        <Variable x:TypeArguments="s:String[]" Name="ArFiles" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:SelectFolder sap2010:Annotation.AnnotationText="User selects a folder" DisplayName="Browse For Folder" sap:VirtualizedContainerService.HintSize="544,144" sap2010:WorkflowViewState.IdRef="SelectFolder_1" SelectedFolder="[FolderName]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:SelectFolder>
+      <Assign sap2010:Annotation.AnnotationText="Get all the file names that user selects and stores it in a list" DisplayName="Assign - File Array" sap:VirtualizedContainerService.HintSize="544,145.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[ArFiles]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles(FolderName)]</InArgument>
+        </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Assign>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application ForEach_SH - Word" sap:VirtualizedContainerService.HintSize="544,1168" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="7f6bbc2e-6371-4316-8f4f-ea3346b6426a" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="483.2,850.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each item" sap:VirtualizedContainerService.HintSize="449.6,605.6" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[ArFiles]">
+                <ui:ForEach.Body>
+                  <ActivityAction x:TypeArguments="x:String">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,458.4" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <WriteLine sap2010:Annotation.AnnotationText="The result will appear in the Output Panel" DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="382.4,154.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[item.ToString]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </WriteLine>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into: List of Files" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,244" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="7f6bbc2e-6371-4316-8f4f-ea3346b6426a" Text="[item.tostring + &quot;[k(Enter)]&quot;]" Version="V4">
+                        <uix:NTypeInto.Target>
+                          <uix:TargetAnchorable CVScreenId="4bf70b4f-c6a4-4cca-9af8-3ab13c8d0c35" CvElementArea="729, 392, 1620, 1417" CvType="InputBox" DesignTimeRectangle="738, 595, 1587, 1214" DesignTimeScaleFactor="2" ElementType="InputBox" FullSelectorArgument="&lt;uia automationid='Body' name='Page 1 content' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Body' name='Page 1 content' role='edit' /&gt;" Guid="3f41fa53-5cb9-4fb0-98fb-62189be84d4f" InformativeScreenshot="f5f71c92bda1c6093435c1b0aefa5985.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='For_Each - Word' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="4bf70b4f-c6a4-4cca-9af8-3ab13c8d0c35" CvTextArea="54, 126, 44, 26" CvTextArgument="File" CvType="Text" DesignTimeRectangle="21, 109, 108, 60" ElementType="Button" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia automationid='FileTabButton' cls='NetUIRibbonTab' name='File Tab' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia automationid='FileTabButton' cls='NetUIRibbonTab' name='File Tab' role='Button' check:fulltext='File Tab' /&gt;" Guid="b8e543c5-c2a7-4e4d-918b-821f565d712c" SearchSteps="Selector, FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NTypeInto.Target>
+                      </uix:NTypeInto>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEach.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEach>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="449.6,183.2" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7f6bbc2e-6371-4316-8f4f-ea3346b6426a" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable CVScreenId="4bf70b4f-c6a4-4cca-9af8-3ab13c8d0c35" CvElementArea="311, 39, 44, 44" CvType="Icon" DesignTimeRectangle="307, 32, 56, 58" DesignTimeScaleFactor="2" ElementType="Button" FullSelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIElement' name='Quick Access Toolbar' /&gt;&lt;uia automationid='FileSave' cls='NetUIRibbonButton' name='Save' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' /&gt;&lt;uia cls='NetUIElement' name='Quick Access Toolbar' /&gt;&lt;uia automationid='FileSave' cls='NetUIRibbonButton' name='Save' role='Button' check:fulltext='Save' /&gt;" Guid="b332725b-1417-4d8a-ba4f-9b1e65d75443" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAA+CAYAAAB3NHh5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAEzSURBVGhD7ZtBjoIAEAT3i/BY/sJr3ExiJ0QbLAQ0O9uV1GXaKBXO/ozjePtPJri7Ce7kMAxPt7zh7ia4uwnuboK7m+DuJpj6bdwzERNMFfS+V0Hv1ARTBb3vVdA7NcFUQe97FfROTTBV0PteBb1TE0wV9L5XQe/UBFPF2v0s1r7/8U5NMFW47UqF24gJpgq3XalwGzHBVOG2KxVuIyaYKtxWHsV9ZyncRkwwVbitFG7bUritFG4jJpgq3FYKt20p3FYKtxETTBXTNG3ubttSuK0UbiO+HTzP8/2nfbR4vL9SuK0UbiO+HVxuRYvljSjcVgq3EQ8Fl2vRYvlZonBbKdxGPBxcLqM/hXsO4inB5aej3TMQTwv+Kya4uwnuboK7m+DuPgW7P0Z0Mm+4uwnu7Xj7BYB2ds5ZmZ6+AAAAAElFTkSuQmCC" InformativeScreenshot="92c46132c568d383925abb5a7fdb64e9.png" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='For_Each - Word' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-1931, -11, 1942, 1030" Arguments="c:\users\saara\desktop\foreach_sh.docx" ContentHash="2XglIzG9r0awTPqs_Ets4g" FilePath="C:\Program Files\Microsoft Office\root\Office16\winword.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATCSURBVFhH7ZhtUFRlFMehaaYy3F1hXV7UACk1nZrJHCHyJacZULR4MdAyAjQNKhvTcewFmCyzSVCwaWqsSWukhsrlxQoBBZZlidDNEl8qx0aRtCLQGis/+OF0znn2Prss1+UuXPeD05n5DXcvc/f/4znnee4MQddT3RBgNFfwvIq+2nkfX4CAUtFf48ofsm5W/YIAgNk3CgXfZVR7OBBgdohQ8F0mtYcDAWaHCgXf9b/g1cBsrYL9+MBQqIeMBMzWJjhnZw9cnV+YubvOwwO7e+l4UA0bDpgdGnR7QXs1AnH5DmbiU0QbTFzVBrHEyjaIedIuWGGHaKYVbluO5LXChFwbMz7HBpOe70TRcyjapxroLywYV+AlhihisStdYsggsTy32PicFhj3BJLdAnc8ewCmvuCEaYVdyNERIQQ95Nxi7lUbIIZM8Fq1cS65qOxmiHq8GVe+Du5c3wHTXj6iGuoPLCjFvNrpLebdTveqoRgSiXKRy5ohdkUtTFnngKkvfa8a6g8s6NnO8r3dUFbbDfdv6JRyies7YVvNGSa5yCnF4td2wNaq01CKkFjksiaIeKwJYvKqYMpaOwp+pxrqD0LQY856+i4DVRnKiHba4JVPTvE9qvcbenjOaMWKK07yvbO9l1mMCH/0gEuwVT9Bz3Z+7viNQzt+uCjbWf/tH3yP6lj3JZ4zauen9l/5XmXreYhAsfClxH6IybXqK+g5Z8pq/fXPFTlndO1Zk1fZuZ3Hzlziz0Uf/cRi4Uv2g2VJI0TrLSg3ALYzudjJoVQJOGNJhYf4+usTF6VQxmuHccWa+JrqwQ3foFwjWLKQzAaIztFZcOB5ZpMrtry8C9bsOMHX7+07y1CV7PkZ0l8Vf8iff1+RYpbMerA8Uo+Ce3QWdMkp51m9U8xcqfW0nLPcrUfguXeP83X78QvcVqq6g78LORQbu3gfY07ZBZbFVohY2ig3z3BhQc+3AO/O3WJ3tmNbaYdSzVjtYJSqtJ3jn1s+OwVjFbmMOsacslNfQUWMdyeeZxmbDnO4UiQpNkEjXv/ruisqrbgTpYScOf0rMKchegsqxwbJKb/wrLqDvWLOshqgskWsnFJCDCGx1C/B/PAXELZAZ0HPt4ByntGcKVX44Y9yzla/3eW6C+A42u8WS0UxkntoLwp+oK8gf8Bjg94CynmWvvEQlOB8Efc+3SrnbHq+DbZUnmSyNztZTooRi2r1F5RirjnzPjbEBvCaM6WdihyKhS5EUmogbL7egspbwDVnA44NKeY1Zx5iYSS2sAblqiF0QbX+gvR6kqtGYlIOjw0S41XzmjO5am6xMfOrYEyyFcKS3kHBKh0FMxuqqZ1uscHtZLEB7SQxRIohSVYwzHoLRk9fB8bEN8A0ZxuY5m4fESyooUy3xKWCb9Jg1KQsuPWufDDMLATjrDcxoGxQoL9gtjbBkLsLwDfPQMg9a2D0jBfBeN8mMM0uxYDyQYH+gtnaBA0zi3BlfBBfDIaEjdjazWCcXYLtHfnqEZitTZBCh4JXjedOHzkCs7UJinZpQT1ouGC2VkH1L7jWYPb1ITgKh79Z7QuuJcbE11sw2yAUfNdNyGQkIYDEI5RJ2UNWMEL/io1AogIEZWFmUPB/G0TZjj5N0YUAAAAASUVORK5CYII=" InformativeScreenshot="7450e53dac836026b30898895f58f144.png" Reference="oO_jccGPmkyr0ILjlR2JZQ/iMlTMTY6T0KHx0Law-sLFA" Selector="&lt;wnd app='winword.exe' cls='OpusApp' title='ForEach_SH - Word' /&gt;" Title="ForEach_SH - Word" Version="V1" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
