@@ -1,0 +1,218 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="628.5333333333333,1645.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap2010:Annotation.AnnotationText="This block of code demonstrates a workflow using Split and Contains methods that extract sentences containing “RPA” from a paragraph”. " DisplayName="Sequence - To demonstrate the use of Split and Contain methods" sap:VirtualizedContainerService.HintSize="590,1622.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="newText" />
+        <Variable x:TypeArguments="s:String[]" Name="newSentence" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign DisplayName="Assign - to demonstrate the use of split and contains" sap:VirtualizedContainerService.HintSize="556,119.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[newText]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String" xml:space="preserve">Robotic process automation (RPA) is a software technology that makes it easy to build, deploy, and manage software robots that emulate human actions interacting with digital systems and software. RPA streamlines workflows, which makes organizations more profitable, flexible, and responsive. RPA is noninvasive and can be rapidly implemented to accelerate digital transformation. It also increases employee satisfaction, engagement, and productivity by removing mundane tasks from their workdays. </InArgument>
+        </Assign.Value>
+      </Assign>
+      <Assign sap2010:Annotation.AnnotationText="String Manipulation -Split string” and enter the values as shown below: " DisplayName="Assign - to split sentences and store it in an array" sap:VirtualizedContainerService.HintSize="556,168.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:String[]">[newSentence]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:String[]">[newText.Split("."c)]</InArgument>
+        </Assign.Value>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </Assign>
+      <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Loop iterates for each item in newSentence" DisplayName="For Each itemcurrentText" sap:VirtualizedContainerService.HintSize="556,1202.6666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[newSentence]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="x:String">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="554,1047.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If sap2010:Annotation.AnnotationText=" “This activity judges whether the sentence contains word ‘RPA’.” and enter condition as item.Contains(&quot;RPA&quot;) " Condition="[item.Contains(&quot;RPA&quot;)]" DisplayName="If - item contains word &quot;RPA" sap:VirtualizedContainerService.HintSize="520,987.3333333333334" sap2010:WorkflowViewState.IdRef="If_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="518,712.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NApplicationCard DisplayName="Browser Word Doc" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,652.6666666666666" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="bcb40248-f13e-4066-8c79-57937ef015f1">
+                      <uix:NApplicationCard.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,354.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into - MS Word" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,292" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="bcb40248-f13e-4066-8c79-57937ef015f1" Text="[item.ToString+ &quot;[k(enter)]&quot;]" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable CVScreenId="d837bdd8-8bdf-4006-a44e-d3d1ef948a35" ContentHash="ZTAnoiAF_k6s16gujKpXTA" CvElementArea="337, 181, 1233, 795" CvType="InputBox" DesignTimeRectangle="346, 328, 1224, 649" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;uia automationid='Body' name='Page 1 content' role='edit' /&gt;" FuzzySelectorArgument="&lt;uia automationid='Body' name='Page 1 content' role='edit' /&gt;" Guid="050b89fc-df50-4b3b-8ea0-530e38f33009" InformativeScreenshot="4fff76a421f5329aa9555b010cc603b8.png" Reference="h4f7KSUpC06C31x2tec80A/KYDc42P02k-EZB6DDV5kcg" ScopeSelectorArgument="&lt;wnd app='winword.exe' cls='OpusApp' title='Document1 - Word' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                            </uix:NTypeInto>
+                          </Sequence>
+                        </ActivityAction>
+                      </uix:NApplicationCard.Body>
+                      <uix:NApplicationCard.TargetApp>
+                        <uix:TargetApp Area="-1931, -11, 1942, 1030" ContentHash="Md_WKoNA6Uej3q54swQ8Fw" FilePath="C:\Program Files\Microsoft Office\root\Office16\winword.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAATCSURBVFhH7ZhtUFRlFMehaaYy3F1hXV7UACk1nZrJHCHyJacZULR4MdAyAjQNKhvTcewFmCyzSVCwaWqsSWukhsrlxQoBBZZlidDNEl8qx0aRtCLQGis/+OF0znn2Prss1+UuXPeD05n5DXcvc/f/4znnee4MQddT3RBgNFfwvIq+2nkfX4CAUtFf48ofsm5W/YIAgNk3CgXfZVR7OBBgdohQ8F0mtYcDAWaHCgXf9b/g1cBsrYL9+MBQqIeMBMzWJjhnZw9cnV+YubvOwwO7e+l4UA0bDpgdGnR7QXs1AnH5DmbiU0QbTFzVBrHEyjaIedIuWGGHaKYVbluO5LXChFwbMz7HBpOe70TRcyjapxroLywYV+AlhihisStdYsggsTy32PicFhj3BJLdAnc8ewCmvuCEaYVdyNERIQQ95Nxi7lUbIIZM8Fq1cS65qOxmiHq8GVe+Du5c3wHTXj6iGuoPLCjFvNrpLebdTveqoRgSiXKRy5ohdkUtTFnngKkvfa8a6g8s6NnO8r3dUFbbDfdv6JRyies7YVvNGSa5yCnF4td2wNaq01CKkFjksiaIeKwJYvKqYMpaOwp+pxrqD0LQY856+i4DVRnKiHba4JVPTvE9qvcbenjOaMWKK07yvbO9l1mMCH/0gEuwVT9Bz3Z+7viNQzt+uCjbWf/tH3yP6lj3JZ4zauen9l/5XmXreYhAsfClxH6IybXqK+g5Z8pq/fXPFTlndO1Zk1fZuZ3Hzlziz0Uf/cRi4Uv2g2VJI0TrLSg3ALYzudjJoVQJOGNJhYf4+usTF6VQxmuHccWa+JrqwQ3foFwjWLKQzAaIztFZcOB5ZpMrtry8C9bsOMHX7+07y1CV7PkZ0l8Vf8iff1+RYpbMerA8Uo+Ce3QWdMkp51m9U8xcqfW0nLPcrUfguXeP83X78QvcVqq6g78LORQbu3gfY07ZBZbFVohY2ig3z3BhQc+3AO/O3WJ3tmNbaYdSzVjtYJSqtJ3jn1s+OwVjFbmMOsacslNfQUWMdyeeZxmbDnO4UiQpNkEjXv/ruisqrbgTpYScOf0rMKchegsqxwbJKb/wrLqDvWLOshqgskWsnFJCDCGx1C/B/PAXELZAZ0HPt4ByntGcKVX44Y9yzla/3eW6C+A42u8WS0UxkntoLwp+oK8gf8Bjg94CynmWvvEQlOB8Efc+3SrnbHq+DbZUnmSyNztZTooRi2r1F5RirjnzPjbEBvCaM6WdihyKhS5EUmogbL7egspbwDVnA44NKeY1Zx5iYSS2sAblqiF0QbX+gvR6kqtGYlIOjw0S41XzmjO5am6xMfOrYEyyFcKS3kHBKh0FMxuqqZ1uscHtZLEB7SQxRIohSVYwzHoLRk9fB8bEN8A0ZxuY5m4fESyooUy3xKWCb9Jg1KQsuPWufDDMLATjrDcxoGxQoL9gtjbBkLsLwDfPQMg9a2D0jBfBeN8mMM0uxYDyQYH+gtnaBA0zi3BlfBBfDIaEjdjazWCcXYLtHfnqEZitTZBCh4JXjedOHzkCs7UJinZpQT1ouGC2VkH1L7jWYPb1ITgKh79Z7QuuJcbE11sw2yAUfNdNyGQkIYDEI5RJ2UNWMEL/io1AogIEZWFmUPB/G0TZjj5N0YUAAAAASUVORK5CYII=" InformativeScreenshot="cc988c263ec67d95a031777daded0f01.png" Reference="h4f7KSUpC06C31x2tec80A/8l_Q3l9zoU6y1BOSF0VbBQ" Selector="&lt;wnd app='winword.exe' cls='OpusApp' title='Document1 - Word' /&gt;" Version="V2" />
+                      </uix:NApplicationCard.TargetApp>
+                    </uix:NApplicationCard>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="518,92.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEach>
+    </Sequence>
+  </Sequence>
+</Activity>
