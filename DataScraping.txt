@@ -1,0 +1,14 @@
+﻿Blog Titles
+The 2024.10 release: Moving UiPath toward agentic automation while enhancing our core
+2024.10 Test Suite updates for agentic continuous testing
+Meet Autopilot for Everyone
+How automation drives compliance with DORA guidelines
+Elevate CX by closing the gaps in your contact center tech stack
+Slow and steady won’t win the race to build enterprise AI
+AI and automation: How manufacturing is winning
+AI’s next act is agentic: It’s not just thinking—it’s doing
+Latte: Latent attention for linear time Transformers
+Your pre-FORWARD + TechEd checklist
+Reduce costs in your supply chain with AI and automation programs
+Intelligent automation to the rescue of healthcare’s global workforce shortages
+Will the future of microfinance be powered by generative AI?
